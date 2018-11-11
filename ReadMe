@@ -1,0 +1,46 @@
+Important notes while creating, configuring, running the test suites as Maven Projects with below mentioned dependencies. 
+
+1. Selenium-Java
+2. TestNG
+
+Note: configuration settings for source and target as mentioned in pom.xml file, Please follow the same structure. 
+
+
+
+1. Always follow the proper pom.xml structure ex: The one mentioned in the Github repo
+2. Always name the TestNG class as Test in Eclipse
+3. Always mention the M2_REPO in Java Build Path -> Libraries section
+4. Always made sure its JDK which is pointing in Java Build Path -> Libraries section -> JRE System Library[jdk -versionXXX]
+    Note:
+      1. If not then select JRE System Library[jdk -versionXXX] and click on Edit. 
+      2. In the next Edit Library dialog, Click on Alternate JRE -> Installed JREs.. -> Preferences(Filtered) dialog
+          Verify if the JDK path of your installed java in checked or not. If not, Then click on Add -> Select Standard VM -> 
+          Click on Directory in the Add JRE dialog and select the path of JAVA JDK from Program Files and click on Finish. 
+          
+ 5. In the next dialog, Uncheck or remove jre and check jdk and click on Apply/Apply and Close 
+ 6. Now verify in the Alternate JRE downdown has the jdk - versionXXX listed or not. If yes, Then all good to go for execution
+ 7. Click on Finish -> Click on Apply and Close. 
+ 
+ 
+ 
+ 
+ Note from pom.xml run configuration point of view. 
+ 
+ Step1: Click on POM.xml
+ Step2: Right click on POM.xml -> Run As -> Run Configurations -> In the Run Configuration dialod window verify below things. 
+ 
+ a. Verify if the project info is reflecting the same which you are working on or not, If not, change it by using Browser option
+ b. Select the appropriate suite Basically the testNg.xml 
+ 
+ Ex: C:\Users\Tejkumar\Desktop\JanBask-Batch\Programs\MP1.0\src\test\java\FirstTest.xml
+ 
+ c. Navigate to JRE tab and verify the Alternate JRE is reflecting to JDK installed version. If not, Make sure you change it as mentioned 
+      in the above steps. Click on Apply -> Click on Run 
+      
+      
+ Step3: Verify if all the tests present in src/test/java with name Test in their TestNG class name is executed one by one or not. 
+ 
+ 
+ 
+          
+    
